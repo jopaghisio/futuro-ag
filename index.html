@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Futuro.AG - Agência de marketing digital em Florianópolis especializada em pequenos negócios. 30 dias gratuitos para empresas que faturam até 100K/mês. Marketing gratuito e estratégias digitais.">
+    <meta name="keywords" content="agência marketing florianópolis, marketing gratuito florianópolis, marketing digital florianópolis, pequenos negócios, agência digital santa catarina">
+    <meta name="author" content="Futuro.AG">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Futuro.AG - Agência de Marketing Digital em Florianópolis">
+    <meta property="og:description" content="30 dias gratuitos para pequenos negócios! Agência especializada em marketing digital para empresas que faturam até 100K/mês em Florianópolis.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://futuro-ag.github.io">
+    <meta property="og:image" content="https://futuro-ag.github.io/og-image.jpg">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DigitalMarketingService",
+      "name": "Futuro.AG",
+      "description": "Agência de marketing digital especializada em pequenos negócios em Florianópolis",
+      "url": "https://futuro-ag.github.io",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Florianópolis",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Florianópolis",
+      "serviceType": "Marketing Digital",
+      "offers": {
+        "@type": "Offer",
+        "name": "30 Dias Gratuitos",
+        "description": "Teste gratuito por 30 dias para pequenos negócios"
+      }
+    }
+    </script>
+    
+    <title>Futuro.AG | Agência de Marketing Digital Florianópolis - 30 Dias Grátis</title>
+    <link rel="canonical" href="https://futuro-ag.github.io">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <style>
+        :root {
+            --primary-blue: #2596be;
+            --primary-pink: #c50060;
+            --primary-purple: #6200c8;
+            --accent-green: #80b500;
+            --light-green: #e7f4e2;
+            --light-blue: #84d4dc;
+            --white: #ffffff;
+            --dark: #1a1a1a;
+            --gray: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
+            color: var(--white);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--light-green);
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-purple) 100%);
+            color: var(--white);
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(197, 0, 96, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 50%, var(--light-green) 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { background-position: 0 0; }
+            100% { background-position: 60px 60px; }
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .free-trial {
+            background: var(--accent-green);
+            color: var(--white);
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(128, 181, 0, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: var(--light-green);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-blue);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-purple) 100%);
+            color: var(--white);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--light-green);
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 80px 0;
+            background: var(--light-green);
+            text-align: center;
+        }
+
+        .cta-large {
+            background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-purple) 100%);
+            color: var(--white);
+            font-size: 1.2rem;
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-large:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(197, 0, 96, 0.4);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            color: var(--light-green);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--light-green);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero {
+                padding: 100px 0 60px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .features-grid,
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .container,
+            .hero-container {
+                padding: 0 1rem;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Focus styles */
+        a:focus,
+        button:focus {
+            outline: 2px solid var(--accent-green);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">Futuro.AG</a>
+            <ul class="nav-menu">
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <a href="#contato" class="cta-button">30 Dias Grátis</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Transforme seu Pequeno Negócio em Florianópolis</h1>
+            <p class="hero-subtitle">Agência de marketing digital especializada em pequenos negócios que faturam até 100K/mês</p>
+            <div class="free-trial">🎉 30 DIAS COMPLETAMENTE GRÁTIS!</div>
+            <p>Sem compromisso • Sem cartão de crédito • Resultados garantidos</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="sobre">
+        <div class="container">
+            <h2 class="section-title">Por que a Futuro.AG é Perfeita para Pequenos Negócios?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Especialistas em Pequenos Negócios</h3>
+                    <p>Entendemos os desafios únicos de quem fatura até 100K/mês. Nossa abordagem é personalizada para sua realidade.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏝️</div>
+                    <h3>Expertise Local em Florianópolis</h3>
+                    <p>Conhecemos o mercado local, a concorrência e as oportunidades específicas de Florianópolis e região.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Marketing Gratuito Incluso</h3>
+                    <p>Estratégias de marketing orgânico e gratuito que geram resultados reais sem estourar seu orçamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços de Marketing Digital</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📱 Gestão de Redes Sociais</h3>
+                    <p>Criação de conteúdo, agendamento de posts e engajamento focados no seu público em Florianópolis.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🔍 SEO Local</h3>
+                    <p>Otimização para aparecer nas buscas locais quando seus clientes procurarem seus serviços na região.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📊 Google Ads Eficiente</h3>
+                    <p>Campanhas otimizadas para pequenos orçamentos com máximo retorno do investimento.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🎨 Criação de Conteúdo</h3>
+                    <p>Arte gráfica, posts e materiais visuais que convertem e representam sua marca.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📈 Análise e Relatórios</h3>
+                    <p>Métricas claras e simples que mostram exatamente como seu negócio está crescendo.</p>
+                </div>
+                <div class="service-card">
+                    <h3>💬 WhatsApp Business</h3>
+                    <p>Automação e otimização do seu atendimento via WhatsApp para converter mais vendas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Resultados que Falam por Si</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Pequenos Negócios Atendidos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">300%</div>
+                    <div class="stat-label">Aumento Médio em Vendas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Taxa de Satisfação</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30</div>
+                    <div class="stat-label">Dias Gratuitos Garantidos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta" id="contato">
+        <div class="container">
+            <h2 class="section-title">Pronto para Revolucionar seu Negócio?</h2>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Junte-se a centenas de pequenos negócios em Florianópolis que já descobriram o poder do marketing digital profissional.</p>
+            <p style="font-size: 1.1rem; margin-top: 1rem; font-weight: bold;">✅ 30 dias completamente grátis<br>✅ Sem compromisso<br>✅ Cancelamento a qualquer momento</p>
+            <a href="https://wa.me/5548999999999?text=Olá! Quero conhecer a oferta de 30 dias gratuitos da Futuro.AG" class="cta-large">
+                🚀 QUERO MEUS 30 DIAS GRÁTIS AGORA!
+            </a>
+            <p style="margin-top: 1rem; color: #666;">Ou ligue: <a href="tel:+5548999999999" style="color: var(--primary-blue); font-weight: bold;">(48) 99999-9999</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Futuro.AG</h4>
+                    <p>A agência do pequeno negócio local em Florianópolis</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>WhatsApp: (48) 99999-9999</p>
+                    <p>Email: contato@futuro-ag.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Localização</h4>
+                    <p>Florianópolis, Santa Catarina</p>
+                    <p>Atendimento em toda a Grande Florianópolis</p>
+                </div>
+            </div>
+            <hr style="margin: 2rem 0; opacity: 0.3;">
+            <p>&copy; 2025 Futuro.AG - Agência de Marketing Digital. Todos os direitos reservados.</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">Marketing Digital • SEO • Redes Sociais • Google Ads • Florianópolis, SC</p>
+        </div>
+    </footer>
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Futuro.AG",
+      "description": "Agência de marketing digital especializada em pequenos negócios em Florianópolis",
+      "url": "https://futuro-ag.github.io",
+      "telephone": "+5548999999999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Florianópolis",
+        "addressRegion": "SC",
+        "postalCode": "",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-27.5954",
+        "longitude": "-48.5480"
+      },
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "priceRange": "$$",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "-27.5954",
+          "longitude": "-48.5480"
+        },
+        "geoRadius": "50000"
+      }
+    }
+    </script>
+</body>
+</html>
