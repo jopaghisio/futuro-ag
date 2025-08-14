@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://seu-usuario.github.io/futuro-ag/sitemap.xml
+Sitemap: https://jopaghisio/futuro-ag/sitemap.xml
